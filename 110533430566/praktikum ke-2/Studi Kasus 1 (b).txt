@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Greeting</title>
+
+</head>
+
+<body bgcolor="green">
+<center>
+<h1>ADA YANG BILANG JELEK KU GAK PEDULI</h1>
+<hr />
+<img src="images/banyuwangi.png">
+
+<?php 
+$d=date("G"); 
+if ($d > "0" && $d < "6") {
+echo "<<h1>Selamat Subuh</h1>". date("G");
+echo "<h2>Selamat Datang di SIMPLE LAREOSING</h2>";
+echo "<h3>Sekarang adalah hari ". date("l"). " tanggal ". date("d m Y");
+echo "<br>Waktu menunjukkan pukul ". date("H:i"). " WIB";
+}
+
+elseif ($d > "6" && $d < "12") {
+echo "<h1>Selamat pagi</h1>";
+echo "<h2>Selamat Datang di SIMPLE LAREOSING</h2>";
+echo "<h3>Sekarang adalah hari ". date("l"). " tanggal ". date("d m Y");
+echo "<br>Waktu menunjukkan pukul ". date("H:i"). " WIB";
+}
+
+
+elseif ($d > "12" && $d < "18"){
+echo "<h1>Selamat Siang</h1>";
+echo "<h2>Selamat Datang di SIMPLE LAREOSING</h2>";
+echo "<h3>Sekarang adalah hari ". date("l"). " tanggal ". date("d m Y");
+echo "<br>Waktu menunjukkan pukul ". date("H:i"). " WIB";
+}
+
+else {
+echo "<h1>Selamat Malam</h1>";
+echo "<h2>Selamat Datang di SIMPLE LAREOSING</h2>";
+echo "<h3>Sekarang adalah hari ". date("l"). " tanggal ". date("d m Y");
+echo "<br>Waktu menunjukkan pukul ". date("H:i"). " WIB";
+}
+
+?>
+
+</center> 
+</body>
+</html>

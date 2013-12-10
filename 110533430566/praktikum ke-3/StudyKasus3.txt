@@ -1,0 +1,62 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ 
+<head>
+<title>Data Seleksi Prefilling</title>
+</head>
+ 
+<body>
+
+<form action="<?php $_SERVER['PHP_SELF'];?>" method="post">
+Film Favorit
+<select name="film">
+<option value="Superman"
+<?php
+if ($_POST['film'] == 'Superman'){
+echo 'selected="selected"';
+}
+?>/>Superman
+<option value="Spiderman"
+<?php
+if ($_POST['film'] == 'Spiderman'){
+echo 'selected="selected"';
+}
+?>/>Spiderman
+<option value="Batman"
+<?php
+if ($_POST['film'] == 'Batman'){
+echo 'selected="selected"';
+}
+?>/>Batman
+<option value="Jumper"
+<?php
+if ($_POST['film'] == 'Jumper'){
+echo 'selected="selected"';
+}
+?>/>Jumper
+<option value="Fast And Fourius"
+<?php
+if ($_POST['anime'] == 'Fast And Fourius'){
+echo 'selected="selected"';
+}
+?>/>Fast And Fourius
+<option value="Harry Poter"
+<?php
+if ($_POST['anime'] == 'Harry Poter'){
+echo 'selected="selected"';
+}
+?>/>Harry Poter
+</select>
+<input type="submit" name="Pilih" value="Pilih" />
+</form>
+<?php
+if (isset($_POST['Pilih'])) {
+$film = $_POST['anime'];
+echo "Anime Kesukaan Anda adalah:
+<font color = blue><b>$film</b></font>";
+}
+?>
+</body>
+</html>
